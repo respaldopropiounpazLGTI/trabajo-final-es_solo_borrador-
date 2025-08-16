@@ -72,7 +72,7 @@ def obtener_vuelo(vuelo_id):
             break
     
     if vuelo_encontrado:
-        # Aplica .title() al destino del vuelo encontrado
+        # Aplico title() al vuelo encontrado
         vuelo_encontrado["destino"] = vuelo_encontrado["destino"].title()
         return jsonify(vuelo_encontrado)
     else:
@@ -243,7 +243,7 @@ def vender_vuelo():
     datos = request.get_json() 
     vuelo_id = datos.get("id")
     if not vuelo_id:
-        return jsonify({"error": "El valor  'id' es obligatorio"}), 400
+        return jsonify({"error": "El valor'id' es obligatorio"}), 400
     
     vuelos = cargar_datos()
     vuelo_encontrado = None
@@ -253,9 +253,9 @@ def vender_vuelo():
             break
 
     if not vuelo_encontrado:
-        return jsonify({"error": "Vuelo no encontrado "}), 404
+        return jsonify({"error":"Vuelo no encontrado"}), 404
     if vuelo_encontrado["vendidos"] >= vuelo_encontrado["capacidad"]:
-        return jsonify({"error": "este vuelo esta  completo "}), 400
+        return jsonify({"error": "este vuelo esta completo"}), 400
     vuelo_encontrado["vendidos"] += 1
     guardar_datos(vuelos)
     return jsonify(vuelo_encontrado)
