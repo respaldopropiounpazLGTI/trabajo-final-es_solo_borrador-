@@ -1,0 +1,26 @@
+[
+    {
+        "id": 2,
+        "destino": "buenos aires",
+        "capacidad": 150,
+        "vendidos": 0
+    },
+    {
+        "id": 3,
+        "destino": "buenos aires",
+        "capacidad": 150,
+        "vendidos": 0
+    },
+    {
+        "id": 4,
+        "destino": "buenos aires",
+        "capacidad": 150,
+        "vendidos": 0
+    },
+    {
+        "id": 5,
+        "destino": "buenos aires",
+        "capacidad": 150,
+        "vendidos": 0
+    }
+]
