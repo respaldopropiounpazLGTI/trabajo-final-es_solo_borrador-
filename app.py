@@ -29,7 +29,7 @@ def guardar_datos(datos):
 def inicio():
     #pass
      """
-    Endpoint inicial de la API. Retorna un mensaje de bienvenida.
+    Endpoint inicio de la API Retorna un print=> mensaje de bienvenida.
     """
      return jsonify({"mensaje": "API de Vuelos"})
 
